@@ -10,6 +10,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   position: absolute;
   right: 0;
   z-index: 2;
+  top: 0;
 }
 
 .btn1 .icon-left::after {
@@ -170,4 +172,33 @@ body {
     top: 15px;
     right: 35px;}
   .overlay a {font-size: 20px}
+}
+
+#content {
+  margin: 10vh 5vw 0;
+}
+
+div > p {
+  color: #e9dcffb4;
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+div > h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+}
+
+div > button {
+  background-color: #e9dcff;
+  padding: 11px 12px;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  margin: 15px 0;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
 }
