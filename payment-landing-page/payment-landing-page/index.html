@@ -9,13 +9,21 @@
   <title>Payment Landing Page</title>
 </head>
 <body>
-  <div id="menu" class="btn1" onclick="myFunction()">
+  <div id="myNav" class="overlay">
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div id="menu" class="btn1" onclick="myFunction(); openNav()">
     <div class="icon-left"></div>
     <div class="icon-right"></div>
   </div>
   <p>START SAVING MONEY</p>
   <h1>Smart Credit Card For your Daily Life.</h1>
   <button type="button">Download</button>
-  <img src="design/Hero Image.png">
+  <img id="hero-image" src="design/Hero Image.png">
 </body>
 </html>
