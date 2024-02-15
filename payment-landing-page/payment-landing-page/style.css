@@ -220,12 +220,16 @@ svg {
 
   .overlay-content {
     flex-direction: row;
-    gap: 0;
+    justify-content: center;
+    gap: 3vw;
+    top: 0;
+    margin-top: 3.5vh;
   }
 
   .overlay a {
     font-size: 1.2rem;
     font-weight: 600;
+    margin: 0;
   }
 
   .overlay a:hover, .overlay a:focus {
@@ -235,11 +239,21 @@ svg {
   }
 
   #myNav {
-    border: 2px solid red;
     height: 10vh;
   }
 
   .overlay {
     overflow: auto;
+  }
+
+  body > svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .account-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0;
   }
 }
