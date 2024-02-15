@@ -191,8 +191,8 @@ div > p {
   font-weight: 600;
 }
 
-div > h1 {
-  font-size: 2.2rem;
+#content > h1 {
+  font-size: 20px;
   letter-spacing: 0.2rem;
 }
 
@@ -226,11 +226,12 @@ svg {
     margin-top: 3.5vh;
   }
 
-  .overlay a {
+  .overlay-content  a {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0;
   }
+
 
   .overlay a:hover, .overlay a:focus {
     background-color: inherit;
@@ -254,6 +255,23 @@ svg {
   .account-buttons {
     display: flex;
     justify-content: flex-end;
-    margin-right: 0;
+    flex-grow: 2;
+  }
+
+  #content {
+    max-width: 542px;
+    margin-top: 25vh;
+  }
+
+  #content > p {
+    font-size: 1rem;
+  }
+
+  #content > h1 {
+    font-size: 3rem;
+  }
+
+  #content > button {
+    font-size: 1.6rem;
   }
 }
