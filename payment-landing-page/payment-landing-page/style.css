@@ -225,9 +225,9 @@ div > button {
   .overlay-content {
     flex-direction: row;
     justify-content: center;
-    gap: 3vw;
     top: 0;
     margin-top: 3.5vh;
+    gap: 1rem;
   }
 
   .overlay-content  a {
@@ -246,7 +246,6 @@ div > button {
 
   .overlay {
     overflow: auto;
-    margin-left: 8vw;
   }
 
   body > svg {
@@ -255,7 +254,7 @@ div > button {
   }
 
   .account-buttons {
-    margin-left: 9vw;
+    margin-left: 11vw;
     flex-direction: row;
     gap: 0.9vw;
   }
