@@ -218,6 +218,10 @@ div > button {
     display: none;
   }
 
+  #myNav {
+    height: 15vh;
+  }
+
   .overlay-content {
     flex-direction: row;
     justify-content: center;
@@ -239,9 +243,6 @@ div > button {
     color: var(--button-BG-color);
   }
 
-  #myNav {
-    height: 15vh;
-  }
 
   .overlay {
     overflow: auto;

@@ -12,3 +12,10 @@ function openNav() {
     x.style.height = "100%"
   }
 }
+
+function navResize() {
+  if (screen.width > 1300) {
+    let x = document.getElementById("myNav");
+    x.style.height = "15vh"
+  }
+}
