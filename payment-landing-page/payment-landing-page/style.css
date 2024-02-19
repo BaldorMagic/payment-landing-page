@@ -14,11 +14,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: var(--app-BG-color);
-}
-
-body {--BG-color
-  background-color: black;
-  color: white;
+  color: var(--menu-color);
 }
 
 #menu::before, #menu::after {
@@ -27,6 +23,7 @@ body {--BG-color
 
 svg {
   display: inline-block;
+  background: initial;
 }
 
 .btn1 {
@@ -64,7 +61,7 @@ svg {
   position: absolute;
   height: 0;
   width: 30px;
-  top: 30px;
+  top: 40px;
   background-color: var(--menu-color);
   right: 23px;
 }
@@ -94,7 +91,7 @@ svg {
   position: absolute;
   height: 0;
   width: 30px;
-  top: 30px;
+  top: 40px;
   background-color: var(--menu-color);
   right: 10px;
 }
@@ -157,27 +154,27 @@ svg {
 }
 
 .overlay a {
-  padding: 0 11px;
-  text-decoration: none;
+  padding: 5px 11px;
+  text-decoration: none;    
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
   display: block;
   transition: 0.3s;
-  margin: 0 5vw;
+  margin: 0 3vw;
+  border-radius: 7px;
+  width: 90vw;
 }
 
 .overlay a:hover, .overlay a:focus {
   background-color: var(--button-BG-color);
   color: black;
-  border-radius: 7px;
 }
 
 .overlay {
   position: absolute;
   right: 45px;
   font-size: 60px;
-  border-radius: 7px;
 }
 
 #content {
@@ -199,6 +196,7 @@ div > p {
 
 div > button {
   background-color: var(--button-BG-color);
+  color: var(--app-BG-color);
   padding: 11px 12px;
   border-radius: 7px;
   font-size: 1.3rem;
@@ -211,8 +209,17 @@ div > button {
   align-items: center;
 }
 
-svg {
-  background: initial;
+.account-buttons {
+  display: flex;
+  gap: 0.4em;
+}
+
+.account-buttons + a {
+  margin-bottom: 0.4em;
+}
+
+.account-buttons > a {
+  margin: 0;
 }
 @media screen and (min-width: 1300px) {
   #menu {
@@ -237,7 +244,6 @@ svg {
   .overlay-content a:hover, .overlay-content a:focus {
     background-color: inherit;
     color: var(--button-BG-color);
-    border-radius: none;
   }
 
   #myNav {
@@ -254,7 +260,6 @@ svg {
   }
 
   .account-buttons {
-    display: flex;
     justify-content: flex-end;
     gap: 2vw;
   }
@@ -262,9 +267,9 @@ svg {
   .account-buttons > a {
     background-color: var(--button-BG-color);
     padding: 11px 12px;
-    border-radius: 7px;
     color: initial;
-    width: 50%;
+    flex-basis: 0;
+    flex-grow: 1;
   }
 
   #content {
@@ -282,6 +287,7 @@ svg {
   }
 
   #content > button {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 }
